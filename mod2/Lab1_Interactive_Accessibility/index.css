@@ -1,0 +1,114 @@
+/* Reset and base styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333333;
+}
+
+body, .contact-input, .contact-textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main layout */
+.contact-page {
+    min-height: 100vh;
+    max-width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.contact-form-section {
+    display: flex;
+    width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/* Image styling */
+.contact-image {
+    width: 900px;
+    margin-right: -50px;
+}
+
+/* Heading */
+.contact-form-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+.contact-form-heading span {
+    color: #007000;
+}
+
+.contact-form-intro {
+    font-size: 1.25rem;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+/* Form label */
+label {
+    display: block;
+    width: 300px;
+    margin: 10px auto 4px;
+    font-weight: 500;
+}
+
+/* Inputs */
+.contact-input {
+    display: block;
+    width: 300px;
+    margin: 0 auto 10px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+
+/* Textarea */
+.contact-textarea {
+    display: block;
+    width: 300px;
+    margin: 0 auto 10px;
+    padding: 16px 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Placeholders */
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: #555555;
+}
+
+/* Button */
+.contact-submit-button {
+    display: block;
+    border: 2px solid #333333;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin: 20px auto 0;
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    transition: background-color 0.3s;
+    margin-left: 65px;
+}
+
+.contact-submit-button:hover {
+    background-color: #dddddd;
+}
+
+/* Focus styles for accessibility */
+.contact-input:focus,
+.contact-textarea:focus,
+.contact-submit-button:focus {
+    outline: 2px solid #007000;
+}
